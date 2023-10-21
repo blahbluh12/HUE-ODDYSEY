@@ -45,7 +45,9 @@ a{
     flex-direction: row;    
     flex-wrap: wrap;
 }
-
+.flex-row img{
+   border-radius: 10px; 
+}
 ul{
     list-style-type: none;
 }
@@ -488,23 +490,12 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .newsletter .form-btn{
-    border-radius: 0;
+    border-radius: 5;
     padding: .8rem 32%;
     margin: 1rem 0;
     background: var(--sky);
+    color: var(--white);
 }
-
-.site-content .sidebar .popular-tags{
-    padding: 5rem 0;
-}
-
-.site-content .sidebar .popular-tags .tags .tag{
-    background: var(--sky);
-    padding: .4rem 1rem;
-    border-radius: 3rem;
-    margin: .4rem .6rem;
-}
-
 
 /* -------x------- Sidebar -----------x----------- */
 
@@ -532,6 +523,7 @@ footer.footer .container > div{
 
 footer.footer .container h2{
     color: var(--white);
+    font-family: var(--Josefin);
 }
 
 footer.footer .newsletter .form-element{
