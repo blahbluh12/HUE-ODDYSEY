@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans&family=Lexend&family=Livvic&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
 
 
 html, body{
@@ -22,6 +22,7 @@ html, body{
     --explore:linear-gradient(120deg, #085078 0%, #85D8CE 100%);
     --sky: linear-gradient(120deg, #614385 0%, #516395 100%);
     --night: linear-gradient(120deg, #283048 0%, #859398 100%);
+    --button-hover: linear-gradient(120deg, #108dc7 0%, #ef8e38 100%);
 
     /*      theme font-family   */
     --Abel: 'Abel', sans-serif;
@@ -295,7 +296,7 @@ main .blog-content .btn-blog{
     color: #b5bd75;
     background: var(--sky);
     margin: .5rem;
-    transition: background 0.5s, color 0.5s
+    transition: background 0.5s, color 0.5s;
 }
 main .blog-content .btn-blog:hover{
     color: var(--white);
@@ -345,8 +346,12 @@ main .post-content{
 }
 
 main .site-content .post-content > .post-image, .post-title{
-    padding: 1rem 2rem;
+    padding: 0.1rem 1rem;
     position: relative;
+}
+.post-title-heading{
+    font-family: var(--Lexend);
+    font-weight: 300;
 }
 
 
@@ -373,10 +378,15 @@ main .post-content .post-title a{
 }
 
 .site-content .post-content .post-title .post-btn{
-    border-radius: 0;
+    border-radius: 5;
     padding: .7rem 1.5rem;
     background: var(--sky);
     color: var(--white);
+
+}
+.site-content .post-content .post-title .post-btn:hover {
+    background: var(--button-hover);
+    transition: background-color 0.3s; /* Adjust the duration as needed */
 }
 
 .site-content .pagination{
@@ -427,7 +437,17 @@ main .post-content .post-title a{
     padding: 1rem 0;
 }
 .popular-title {
-    font-family: var(--Josefin);
+    font-family: 'Raleway', sans-serif;
+}
+.popular-title::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #ff5b00;
+    width: 9rem;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 5px;
 }
 .site-content .sidebar .popular-post h2{
     padding-top: 3rem;
@@ -440,7 +460,20 @@ main .post-content .post-title a{
 
 .site-content .sidebar .newsletter{
     padding-top: 10rem;
+    font-family: 'Raleway', sans-serif;
 }
+
+.site-content .sidebar .newsletter h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #ff5b00;
+    width: 7rem;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
 
 .site-content .sidebar .newsletter .form-element{
     padding: .5rem 2rem;
