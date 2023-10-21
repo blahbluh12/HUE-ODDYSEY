@@ -285,9 +285,10 @@ main .blog-post .blog-content{
 }
 main .blog-content .blog-title{
     padding: 2rem 0;
-    font-family: var(--Anton)
 }
-
+.blog-title h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 main .blog-content .btn-blog{
     padding: .7rem 2rem;
     color: #b5bd75;
