@@ -70,6 +70,7 @@ button.btn{
     font-size: 1rem;
     font-family: var(--Livvic);
     cursor: pointer;
+    color: black;
 }
 
 span{
@@ -587,7 +588,13 @@ footer.footer .move-up span:hover{
         display: initial;
     }
 
-    
+    .title_1{
+        font-size: 1rem;
+    }
+
+    .title_2{
+        font-size: 2rem;
+    }
     .map {
         margin-left: 0.75em;
         width: 35em;
